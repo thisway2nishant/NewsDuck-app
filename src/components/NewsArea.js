@@ -48,8 +48,7 @@ export class NewsArea extends Component {
   }
 
   handleNextButton = async ()=>{
-    if(!(this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize))){
-      this.setState({page: this.state.page+1});
+      await this.setState({page: this.state.page+1});
       this.updatePage();
       
       // let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&language=${this.props.lang}&apikey=0aaa70fc059f4d69ba439fabedd33834&page=${this.state.page +1}&pageSize=${this.props.pageSize}`;
@@ -63,11 +62,11 @@ export class NewsArea extends Component {
       //   articles: parsedData.articles,
       //   loading: false}) 
       // console.log(this.state.loading);      
-    }
+    
   }
 
   handlePrevButton = async ()=>{
-    this.setState({page: this.state.page-1});
+    await this.setState({page: this.state.page-1});
     this.updatePage();
     // let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&language=${this.props.lang}&apikey=0aaa70fc059f4d69ba439fabedd33834&page=${this.state.page -1}&pageSize=${this.props.pageSize}`;
     // this.setState({loading: true});
