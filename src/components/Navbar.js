@@ -4,7 +4,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               NewsMonkey
@@ -26,13 +26,66 @@ export class Navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">
-                    About
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Business
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Entertainment
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Health
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Science
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Technology
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className="btn btn-outline-primary mx-2"
+                    aria-current="page"
+                  >
+                    Sports
                   </a>
                 </li>
               </ul>
